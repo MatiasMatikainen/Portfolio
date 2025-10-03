@@ -3,28 +3,31 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 export default function Projektit() {
   const projects = [
-    {
-      title: "To-Do List",
-      description: "JavaScriptillä toteutettu yksinkertainen To-Do List, jossa voi lisätä, muokata, poistaa ja merkitä tehtäviä tehdyiksi. Lisäksi jokainen tehtävä saa oman aikaleiman, kun se lisätään.",
-      image: "/projects/To-do-list.png",
-      github: "https://github.com/MatiasMatikainen/To-do-list",
-      tech: ["HTML", "CSS", "JavaScript"]
-    },
-    {
-      title: "Booklist App",
-      description: "Simppeli kirjahallintasovellus, jossa voi lisätä, muokata, etsiä, järjestää ja poistaa kirjoja.",
-      image: "/projects/Booklist.png",
-      github: "https://github.com/MatiasMatikainen/book-app",
-      tech: ["HTML", "CSS", "JavaScript", "React"]
-    },
-    {
-      title: "Portfoliosivusto",
-      description: "Reactilla toteutettu oma portfoliosivusto.",
-      image: "/projects/portfolio.png",
-      github: "https://github.com/OMA-KAYTTAJA/mobileapp",
-      tech: ["HTML", "CSS", "JavaScript", "React"]
-    }
-  ];
+  {
+    title: "To-Do List",
+    description:
+      "JavaScriptillä toteutettu yksinkertainen To-Do List, jossa voi lisätä, muokata, poistaa ja merkitä tehtäviä tehdyiksi. Lisäksi jokainen tehtävä saa oman aikaleiman, kun se lisätään.",
+    image: process.env.PUBLIC_URL + "/projects/To-do-list.png",
+    github: "https://github.com/MatiasMatikainen/To-do-list",
+    tech: ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    title: "Booklist App",
+    description:
+      "Simppeli kirjahallintasovellus, jossa voi lisätä, muokata, etsiä, järjestää ja poistaa kirjoja.",
+    image: process.env.PUBLIC_URL + "/projects/Booklist.png",
+    github: "https://github.com/MatiasMatikainen/book-app",
+    tech: ["HTML", "CSS", "JavaScript", "React"]
+  },
+  {
+    title: "Portfoliosivusto",
+    description: "Reactilla toteutettu oma portfoliosivusto.",
+    image: process.env.PUBLIC_URL + "/projects/portfolio.png",
+    github: "https://github.com/MatiasMatikainen/Portfolio",
+    tech: ["HTML", "CSS", "JavaScript", "React"]
+  }
+];
+
 
   const [current, setCurrent] = useState(0);
   const [isOpen, setIsOpen] = useState(false);

@@ -9,7 +9,7 @@ export default function Yhteystiedot() {
           rel="noopener noreferrer"
           className="contact-link"
         >
-          <img src="/icons/linkedin.svg" alt="LinkedIn logo" />
+          <img src="icons/linkedin.svg" alt="LinkedIn logo" />
         </a>
       </div>
     </section>
